@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('restrict');
 
             $table->index('brand_id');
-            $table->index('category_id')
+            $table->index('category_id');
 
             $table->timestamps();
         });
